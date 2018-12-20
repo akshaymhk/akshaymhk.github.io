@@ -5,8 +5,8 @@ function openDeepLink() {
         if (wnd.location.href === 'about:blank') {
             // Truecaller app not present on the device and you redirect the user 
             // to your alternate verification page
-            wnd.close();
             alert("TRUECALLER NOT INSTALLED");
+            wnd.close();
         } else {
             // Truecaller app present on the device and the profile overlay opens
             // The user clicks on verify and you'll receive the user's access token to fetch the profile on 
